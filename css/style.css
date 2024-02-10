@@ -55,6 +55,126 @@ Table OF Contents
 	Typography
 \*----------------------------*/
 
+
+.social-box {
+  text-align: center;
+  /* Centre horizontalement le contenu */
+}
+
+.social-box li {
+  display: inline-block;
+  /* Affichez les éléments sur la même ligne */
+  margin: 0 10px;
+  /* Espace autour des icônes (ajustez au besoin) */
+}
+
+.pull-left {
+  display: flex;
+  align-items: center;
+}
+
+
+@keyframes rainbowText {
+  0% {
+    color: red;
+  }
+
+  14% {
+    color: orange;
+  }
+
+  28% {
+    color: yellow;
+  }
+
+  42% {
+    color: green;
+  }
+
+  57% {
+    color: blue;
+  }
+
+  71% {
+    color: indigo;
+  }
+
+  85% {
+    color: violet;
+  }
+
+  100% {
+    color: red;
+  }
+
+  55% {
+    color: white;
+  }
+}
+
+@keyframes rainbowCircle {
+
+  0%,
+  100% {
+    background: red;
+  }
+
+  50% {
+    background: violet;
+  }
+}
+
+.tagline {
+  font-size: 20px;
+  text-align: center;
+  animation: rainbowText 4s linear infinite;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom right, white, red, orange, yellow, green, blue, indigo, violet, red);
+  border-radius: 50%;
+  animation: rainbowCircle 4s linear infinite;
+}
+
+.circle2 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom right, violet, white, indigo, blue, green, yellow, orange, red, violet);
+  border-radius: 50%;
+  animation: rainbowCircle 4s linear infinite;
+}
+
+.animated-text {
+  font-size: 30px;
+  animation: textAnimation 3s infinite;
+  text-align: center;
+  color: white;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+    color: white;
+  }
+
+  50% {
+    transform: scaleX(1.2) scaleY(0.8);
+    opacity: 0.7;
+    color: blue;
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+    color: white;
+  }
+
+}
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
