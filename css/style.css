@@ -54,69 +54,7 @@ Table OF Contents
 /*----------------------------*\
 	Typography
 \*----------------------------*/
-@keyframes rainbowText {
-  0% {
-    color: red;
-  }
 
-  14% {
-    color: orange;
-  }
-
-  28% {
-    color: yellow;
-  }
-
-  42% {
-    color: green;
-  }
-
-  57% {
-    color: blue;
-  }
-
-  71% {
-    color: indigo;
-  }
-
-  85% {
-    color: violet;
-  }
-
-  100% {
-    color: red;
-  }
-
-  55% {
-    color: white;
-  }
-}
-
-@keyframes rainbowCircle {
-
-  0%,
-  100% {
-    background: red;
-  }
-
-  50% {
-    background: violet;
-  }
-}
-
-.tagline {
-  font-size: 25px;
-  text-align: center;
-  animation: rainbowText 4s linear infinite;
-}
-
-
-.animated-text {
-  font-size: 30px;
-  animation: textAnimation 3s infinite;
-  text-align: center;
-  color: white;
-}
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
